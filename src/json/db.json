@@ -1,0 +1,123 @@
+{
+    "products":[
+        {
+            "id":0,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-8-1024x1024.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-8-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-8-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-8-gallery-3.jpg"],
+            "title":"Basket With Handles",
+            "price":160,
+            "categorys":["Decoration", "Home Decor"],
+            "tags":["Black", "Modern"],
+            "new": true,
+            "discount":0,
+            "stoc":18,
+            "Weight":"2 kg",
+            "Dimensions":"10 × 10 × 15 cm",
+            "Color" :"Beige",
+            "Material":"Wood"   
+
+        },
+        {
+            "id":1,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-6.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-6-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-6-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-6-gallery-3.jpg"],
+            "title":"Deco Accessory",
+            "price":15,
+            "categorys":["Basics", "Home Decor"],
+            "tags":["Decoration", "Modern"],
+            "new": false,
+            "discount":0,
+            "stoc":32,
+            "Weight":"3 kg",
+            "Dimensions":"40 × 70 × 15 cm",
+            "Color" :["Beige", "Black"],
+            "Material":["Metal", "Wood"]    
+        },{
+            "id":2,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-7.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-7-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-7-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-7-gallery-3.jpg"],
+            "title":"Flower Vase",
+            "price":170,
+            "categorys":["Home Decor", "Vases"],
+            "tags":["Modern", "Pottery"],
+            "new": true,
+            "discount":19,
+            "stoc":8,
+            "Weight":"2 kg",
+            "Dimensions":"10 × 10 × 15 cm",
+            "Color" :["Gold", "White"],
+            "Material":["Concrete", "Metal"]
+        },{
+            "id":3,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-5.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-5-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-5-gallery-2.jpg","4https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-5-gallery-3.jpg"],
+            "title":"Wall Clock",
+            "price":110,
+            "categorys":["Basics", "Furniture", "Home Decor"],
+            "tags":["Decoration", "Modern"],
+            "new": true,
+            "discount":0,
+            "stoc":19,
+            "Weight":"1 kg",
+            "Dimensions":"10 × 10 × 10 cm",
+            "Color" :["Black"],
+            "Material":["Chrome"]
+        },{
+            "id":4,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-4.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-4-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-4-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-4-gallery-3.jpg"],
+            "title":"Newspaper Storage",
+            "price":90,
+            "categorys":[" Basics", "Home Decor"],
+            "tags":["Boxes", "Wood"],
+            "new": false,
+            "discount":23,
+            "stoc":18,
+            "Weight":"2 kg",
+            "Dimensions":"10 × 10 × 15 cm",
+            "Color" :["Beige", "White"],
+            "Material":["Wood"]
+        },{
+            "id":5,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-2-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-2-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-2-gallery-3.jpg"],
+            "title":"Pottery Vase",
+            "price":60,
+            "categorys":["Home Decor", "Vases"],
+            "tags":["Antique", "Pottery"],
+            "new": true,
+            "discount":0,
+            "stoc":70,
+            "Weight":"3 kg",
+            "Dimensions":"10 × 10 × 15 cm",
+            "Color" :["Beige"],
+            "Material":["Concrete"]
+        },{
+            "id":6,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-3-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-18-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-18-gallery-3.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-18-gallery-4.jpg"],
+            "title":"Rose Holdback",
+            "price":30,
+            "categorys":[" Decoration", "Home Decor"],
+            "tags":["Decoration", "Rose"],
+            "new": false,
+            "discount":20,
+            "stoc":7,
+            "Weight":"2 kg",
+            "Dimensions":"10 × 10 × 15 cm",
+            "Color" :["Rose"],
+            "Material":["Wood"]
+        },{
+            "id":7,
+            "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-1-gallery-4.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-1-gallery-4.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-1-gallery-2.jpg"],
+            "title":"Basket With Handles",
+            "price":160,
+            "categorys":["Decoration", "Home Decor"],
+            "tags":["Black", "Modern"],
+            "new": true,
+            "discount":0,
+            "stoc":18,
+            "Weight":"2 kg",
+            "Dimensions":"10 × 10 × 15 cm",
+            "Color" :"Beige",
+            "Material":"Wood"
+        }
+
+
+
+
+    ]
+}

@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.aboutus-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutus-content .image-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.aboutus-content .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 50%;
+}
+.aboutus-content button {
+  font-family: Catamaran, sans-serif;
+  font-size: 12px;
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 6px 50px;
+  line-height: 47px;
+  transition: 0.5s;
+}
+.aboutus-content button:hover,
+.aboutus-content button:active {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.aboutus-content #contentBox-about {
+  font-family: catamaran, sans-serif;
+  border-radius: 0px;
+  border: none;
+  color: #929292;
+  margin-top: 20px;
+}
+.aboutus-content a {
+  text-decoration: none;
+  color: #929292;
+  font-size: 12px;
+}
+
+.product .addtocart a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #999;
+  text-transform: uppercase;
+  font-family: Catamaran;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.product .addtocart a:hover {
+  color: #080808;
+}
+
+.prod-category a {
+  padding: 0 10px;
+  text-decoration: none;
+  font-family: catamaran;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #929292;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.prod-category a:hover {
+  color: #080808;
+}
+.prod-category a.active {
+  color: #080808;
+}
+
+.about-section-header {
+  background-image: url("https://depot.qodeinteractive.com/wp-content/uploads/2017/01/about-title-img1.jpg");
+  background-size: cover;
+  background-position: center 0px;
+  padding: 100px 50px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin-top: 96px;
+}
+
+.about-section-header h2 {
+  font-size: 50px;
+  font-family: Catamaran, sans-serif;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.about-content .tab a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.about-content p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.about-content a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: white;
+}
+
+.content {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+#header {
+  height: 96px;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  width: 1300px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 101;
+}
+#header div {
+  text-align: center;
+}
+#header .navbar-left ul {
+  list-style: none;
+  display: flex;
+  padding-left: 22px;
+}
+#header .navbar-left ul li {
+  position: relative;
+  padding-left: 30px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+}
+#header .navbar-left ul li .submenu {
+  transition: 0.5s;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  text-align: left;
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+  background-color: #000;
+  z-index: 1;
+}
+#header .navbar-left ul li .submenu ion-icon {
+  display: none;
+  transition: 0.5s;
+}
+#header .navbar-left ul li .submenu a {
+  color: #a5a5a5;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#header .navbar-left ul li .submenu a:hover ion-icon {
+  color: #fff !important;
+  display: inline-block;
+  transition: 0.5s;
+}
+#header .navbar-left ul li .submenu li {
+  height: 30px;
+}
+#header .navbar-left ul li ul {
+  padding: 10px !important;
+  display: block;
+}
+#header .navbar-left ul li:hover .submenu {
+  height: auto;
+  opacity: 1;
+  transition: 0.5s;
+}
+#header .navbar-left ul a {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: Catamaran, sans-serif;
+  padding-left: -20px;
+  transition: 0.5s;
+}
+#header .navbar-left ul a:hover {
+  color: #929292;
+  transition: 0.5s;
+}
+
+.navbar-center img {
+  width: 50%;
+  height: 20px;
+}
+
+.navbar-right ul {
+  display: flex;
+  list-style: none;
+}
+.navbar-right ul li {
+  padding-left: 22px;
+}
+.navbar-right ul li a {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Catamaran, sans-serif;
+}
+.navbar-right ul li a:hover {
+  color: #929292;
+  transition: 0.5s;
+}
+.navbar-right .desktop-sidebar-slider-menu {
+  height: 100vh;
+  width: 86vh;
+  background-color: #111;
+  position: fixed;
+  right: -86vh;
+  top: 0;
+  padding: 5rem 5rem;
+  transition: 0.5s;
+  overflow-y: hidden;
+}
+.navbar-right .desktop-sidebar-slider-menu * {
+  text-align: center;
+}
+.navbar-right .desktop-sidebar-slider-menu h6 {
+  font-size: 12px;
+  color: white;
+}
+.navbar-right .desktop-sidebar-slider-menu span.close-icon {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  background: transparent;
+  border: none;
+}
+.navbar-right .desktop-sidebar-slider-menu span.close-icon:hover {
+  cursor: pointer;
+}
+.navbar-right .desktop-sidebar-slider-menu span.close-icon i {
+  font-size: 24px;
+  color: aliceblue;
+}
+.navbar-right .desktop-sidebar-slider-inner {
+  width: 100%;
+  height: 80%;
+  overflow-y: hidden;
+}
+.navbar-right .desktop-sidebar-slider-inner .call-to-action {
+  color: #929292;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 2rem;
+  display: block;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  overflow-y: hidden;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li {
+  width: 23%;
+  margin: -1px 0.8%;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li .social-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li .social-image i {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  font-size: 27px;
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0.5;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li .social-image:hover:after {
+  opacity: 1;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li .social-image:hover {
+  color: #080808;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li .social-image:hover i {
+  transition: 0.3s;
+  visibility: visible;
+  top: 50%;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li .social-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(8, 8, 8, 0.4);
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.navbar-right .desktop-sidebar-slider-inner .social-images li .social-image img {
+  width: 100%;
+}
+.navbar-right .desktop-sidebar-slider-bottom {
+  width: 100%;
+  height: 20%;
+  margin-top: 4rem;
+  overflow-y: hidden;
+}
+.navbar-right .desktop-sidebar-slider-bottom .social-network-title {
+  color: #afafaf;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 1rem 0rem;
+}
+.navbar-right .desktop-sidebar-slider-bottom .social-buttons .social-button {
+  color: #ffffff;
+  margin: 0rem 1rem;
+  transition: 0.5s;
+}
+.navbar-right .desktop-sidebar-slider-bottom .social-buttons .social-button:hover {
+  color: #afafaf;
+  transition: 0.5s;
+}
+
+.testimonial-area .testimonial-section {
+  background-color: #080808;
+  font-family: "Catamaran", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+.testimonial-area .testimonial-section {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+}
+.testimonial-area .testimonial-nav {
+  font-size: 2em;
+  color: #aaa;
+  text-decoration: none;
+}
+.testimonial-area .testimonial-content {
+  flex: 1;
+  text-align: center;
+  padding: 0 30px;
+}
+.testimonial-area .testimonial-content h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 36px;
+}
+.testimonial-area .testimonial-content .testimonial-text {
+  margin-top: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 200;
+  color: #929292;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial-area .testimonial-content .testimonial-author {
+  color: #080808;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.testimonial-area .testimonial-content .testimonial-role {
+  color: #080808;
+  font-size: 12px;
+}
+.testimonial-area .testimonial-text {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.testimonial-area .testimonial-author {
+  font-weight: 700;
+  font-size: 20px;
+}
+.testimonial-area .testimonial-role {
+  color: #777;
+  font-size: 16px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 55px;
+}
+
+.product {
+  flex-basis: calc(25% - 10px);
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 0 15px 50px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.product-name {
+  font-size: 14px;
+  text-align: center;
+  font-family: Catamaran;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #080808;
+  padding-top: 20px;
+}
+
+.product-onsale {
+  position: absolute;
+  display: block;
+  left: auto;
+  width: auto;
+  top: 15px;
+  color: #080808;
+  right: 45px;
+  font-family: Montserrat;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 12px;
+  z-index: 100;
+}
+
+.product-new {
+  position: absolute;
+  display: block;
+  right: auto;
+  width: auto;
+  top: 15px;
+  color: #080808;
+  left: 45px;
+  font-family: Montserrat;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 12px;
+  z-index: 100;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.price {
+  margin-top: 5px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 100;
+  text-align: center;
+  color: #999999;
+}
+
+.discount {
+  text-decoration: line-through;
+}
+
+.filter {
+  text-align: right;
+  right: auto;
+  right: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: Catamaran;
+  color: #080808;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 2.2rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}/*# sourceMappingURL=about.css.map */
