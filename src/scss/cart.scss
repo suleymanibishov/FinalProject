@@ -311,3 +311,21 @@
         }
     }
 }
+
+@media (max-width: 768px){
+
+    .cart-body{
+        flex-direction: column;
+        .added-items{
+            width: 100%;
+            *{
+                margin: 0 !important;
+            }
+        }
+        .right-sidebar{
+            width: 100%;
+        }
+    }
+
+
+}

@@ -12,8 +12,8 @@
             "stoc":18,
             "Weight":"2 kg",
             "Dimensions":"10 × 10 × 15 cm",
-            "Color" :"Beige",
-            "Material":"Wood"   
+            "Colors" :["Beige"],
+            "Materials":["Wood"]  
 
         },
         {
@@ -28,8 +28,8 @@
             "stoc":32,
             "Weight":"3 kg",
             "Dimensions":"40 × 70 × 15 cm",
-            "Color" :["Beige", "Black"],
-            "Material":["Metal", "Wood"]    
+            "Colors" :["Beige", "Black"],
+            "Materials":["Metal", "Wood"]    
         },{
             "id":2,
             "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-7.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-7-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-7-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-7-gallery-3.jpg"],
@@ -42,8 +42,8 @@
             "stoc":8,
             "Weight":"2 kg",
             "Dimensions":"10 × 10 × 15 cm",
-            "Color" :["Gold", "White"],
-            "Material":["Concrete", "Metal"]
+            "Colors" :["Gold", "White"],
+            "Materials":["Concrete", "Metal"]
         },{
             "id":3,
             "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-5.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-5-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-5-gallery-2.jpg","4https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-5-gallery-3.jpg"],
@@ -56,8 +56,8 @@
             "stoc":19,
             "Weight":"1 kg",
             "Dimensions":"10 × 10 × 10 cm",
-            "Color" :["Black"],
-            "Material":["Chrome"]
+            "Colors" :["Black"],
+            "Materials":["Chrome"]
         },{
             "id":4,
             "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-4.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-4-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-4-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-4-gallery-3.jpg"],
@@ -70,8 +70,8 @@
             "stoc":18,
             "Weight":"2 kg",
             "Dimensions":"10 × 10 × 15 cm",
-            "Color" :["Beige", "White"],
-            "Material":["Wood"]
+            "Colors" :["Beige", "White"],
+            "Materials":["Wood"]
         },{
             "id":5,
             "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-2-gallery-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-2-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-2-gallery-3.jpg"],
@@ -84,8 +84,8 @@
             "stoc":70,
             "Weight":"3 kg",
             "Dimensions":"10 × 10 × 15 cm",
-            "Color" :["Beige"],
-            "Material":["Concrete"]
+            "Colors" :["Beige"],
+            "Materials":["Concrete"]
         },{
             "id":6,
             "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-3-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-18-gallery-2.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-18-gallery-3.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-18-gallery-4.jpg"],
@@ -98,8 +98,8 @@
             "stoc":7,
             "Weight":"2 kg",
             "Dimensions":"10 × 10 × 15 cm",
-            "Color" :["Rose"],
-            "Material":["Wood"]
+            "Colors" :["Rose"],
+            "Materials":["Wood"]
         },{
             "id":7,
             "imgs":["https://depot.qodeinteractive.com/wp-content/uploads/2017/01/h1-product-1.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-1-gallery-4.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-1-gallery-4.jpg","https://depot.qodeinteractive.com/wp-content/uploads/2017/01/product-1-gallery-2.jpg"],
@@ -112,8 +112,8 @@
             "stoc":18,
             "Weight":"2 kg",
             "Dimensions":"10 × 10 × 15 cm",
-            "Color" :"Beige",
-            "Material":"Wood"
+            "Colors" :["Beige"],
+            "Materials":["Wood"]
         }
 
 

@@ -254,6 +254,71 @@ footer {
     
     
         }
+
+        .header-mb{
+            //display: none;
+            padding-left: 30px;
+            height: 96px;
+            align-items: center;
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            .drop{
+                .drop-btn {
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    font-family: Catamaran, sans-serif;
+                    position: relative;
+                    float: right;
+                    .submenu2 {                      
+                        height: 100%;
+                        width: 40%;
+                        background-color: #111;
+                        color: #fff;
+                        position: fixed;
+                        right: 0;
+                        transform: translateX(101%);
+                        top: 0;
+                        padding: 3rem 3rem;
+                        transition: .5s;text-align: left;
+                        .close{
+                            span.close-icon {
+                                position: absolute;
+                                top: 38px;
+                                right: 38px;
+                                background: transparent;
+                                border: none;
+                        
+                                i {
+                                    font-size: 24px;
+                                    color: aliceblue;
+                                }
+                            }
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                                li{
+                                    font-size: 24px;
+                                    i{
+                                        font-size: 15px;
+                                    }
+                                    ul{
+                                        transition: 0.3s;
+                                        height: 0;
+                                        overflow: hidden;
+                                    }
+                                }
+                            
+                        }
+                    }
+                }
+    
+            }
+        }
     
     }
 }
@@ -588,6 +653,33 @@ padding-left: 10px;
     }
 }
 
+
+@media (max-width: 768px){
+
+    .header-div{
+        
+        #header {
+            padding: 3rem 6rem;
+
+            .header-mb{
+                display: flex;
+                
+            }
+            .navbar-left{
+                display: none;
+            }
+            .navbar-right{
+                display: none;
+            }
+        }
+    }
+    footer .footer-section-container{
+        flex-wrap: wrap;
+        .footer-desktop-section {
+            width: 100% !important;
+        }
+    } 
+}
 
 
     

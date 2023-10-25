@@ -527,4 +527,16 @@
 }
 .popUp .product-card .wishlist .fa-regular {
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .product-list-container {
+    flex-direction: column-reverse;
+  }
+  .product-list-container .product-list {
+    padding: 0 !important;
+  }
+  .product-list-container .product {
+    flex-basis: 100% !important;
+  }
 }/*# sourceMappingURL=product-list.css.map */

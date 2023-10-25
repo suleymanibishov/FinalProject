@@ -609,3 +609,18 @@
     }
     
 }
+
+@media (max-width: 768px){
+
+    .product-list-container{
+        flex-direction:column-reverse;
+        .product-list {
+            padding: 0 !important;
+        }
+        .product{
+            flex-basis: 100% !important;
+        }
+        
+    }
+
+}

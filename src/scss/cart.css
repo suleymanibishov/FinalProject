@@ -266,4 +266,19 @@
   color: #fff;
   background-color: #313131;
   transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .cart-body {
+    flex-direction: column;
+  }
+  .cart-body .added-items {
+    width: 100%;
+  }
+  .cart-body .added-items * {
+    margin: 0 !important;
+  }
+  .cart-body .right-sidebar {
+    width: 100%;
+  }
 }/*# sourceMappingURL=cart.css.map */

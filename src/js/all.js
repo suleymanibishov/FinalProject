@@ -70,6 +70,24 @@ function closeNav() {
     sliderMenu.style.right = "-86vh"
 }
 
+ let sub = document.querySelector(".submenu2");
+document.querySelector(".header-mb").addEventListener("click",function(){
+    sub.style.transform = " translateX(0)";
+})
+document.querySelector(".header-mb .close-icon").addEventListener("click",function(){
+    event.stopPropagation();
+    sub.style.transform = "translateX(101%)";
+
+})
+document.querySelectorAll(".header-mb li").forEach(e =>{
+    e.addEventListener("click",function(){
+        if(e.children[1].style.height != "120px"){
+            e.children[1].style.height = "120px";
+        }else{
+            e.children[1].style.height = "0";
+        }
+    })
+})
 //scroll top
 
 window.onscroll = function () {

@@ -1,13 +1,29 @@
 //price ranger
+let min;
+let max;
+function categoryCondition(handler, handled) {
+  let condition = false;
+  handled.forEach(i => {
+
+      handler.forEach(j => {
+          if (i == j) condition = true;
+      })
+  })
+  return condition
+}
 
 fetch("../src/json/db.json")
 .then(res => res.json())
 .then(data => {
-
-
-	html = "";
-	let count =0;
+  let html = "";
+  min = data.products[0].price;
+  max = data.products[0].price;
 	data.products.forEach(element =>{
+
+    if(max<element.price){max=element.price;}
+    if(min>element.price){min=element.price;}
+
+
 				html+=`
 						<div class="product">
 						<div class="img">
@@ -41,6 +57,112 @@ fetch("../src/json/db.json")
 		})
 
 	$(".product-list").html(html);
+
+  let colors = [];
+  let materials = [];
+  
+  
+  data.products.forEach(product => {
+    product.Colors.forEach(c => {
+      let clr = colors.find(e => { return e.color == c})
+      if(clr == undefined){
+        colors.push({
+            color:c,       
+            count:1
+          });
+        }
+        else{
+          clr.count+=1;      
+          
+        }
+      });
+      product.Materials.forEach(m => {
+        let mtr = materials.find(e => { return e.material == m})
+        if(mtr == undefined){
+          materials.push({
+            material:m,       
+            count:1
+          });
+        }
+        else{
+          mtr.count+=1;              
+        }
+      });
+  });
+  html = "";
+  colors.forEach(c=>{
+    html+=`<li><a href="">${c.color}</a> <span>(${c.count})</span></li>`
+  })
+  document.querySelector(".product-list-container .product-by-color ul").innerHTML=html;
+  html = "";
+  materials.forEach(c=>{
+    html+=`<li><a href="">${c.material}</a> <span>(${c.count})</span></li>`
+  })
+  document.querySelector(".product-list-container .product-by-material ul").innerHTML=html;
+  document.querySelector(".product-list-sidebar").querySelectorAll("a").forEach(e=>{
+    e.addEventListener("click",function (event){
+        event.preventDefault();
+        e.classList.toggle("chosen")
+        let products = [];
+        let clr = [];
+        let mtr = [];
+
+        document.querySelectorAll(".product-list-sidebar .product-by-color .chosen").forEach(
+          e => {
+            clr.push(e.innerHTML);
+          }
+        )
+        document.querySelectorAll(".product-list-sidebar .product-by-material .chosen").forEach(
+          e => {
+            mtr.push(e.innerHTML);
+          }
+        )
+        data.products.forEach(product => {
+
+          if( categoryCondition(product.Colors, clr) ||  categoryCondition(product.Materials, mtr) ){
+            products.push(product)
+          }
+  
+        })
+        html=""
+        products.forEach(element =>{
+          if(max<element.price){max=element.price;}
+          if(min>element.price){min=element.price;}
+          html+=`
+              <div class="product">
+              <div class="img">
+                <span class="product-onsale">${element.discount > 0 ? element.discount + "%" : ""}</span>
+                <span class="product-new">${element.new?"NEW":""}</span>
+                <a class="a-ruler" data-id=${element.id} href="product-single.html"><img src="${element.imgs[0]}" alt="${element.title}"></a>
+                  <div class="quick-look">
+                    <div class="quikc-btn" data-id=${element.id}>
+                      <span>Quick Look</span>
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="product-name">${element.title}</div>
+              <span class="review-star">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                        </span>
+              <div class="price">
+              ${element.discount>0?`<span class="discount">$${element.price}</span> $${Math.floor(element.price-element.price/100*element.discount)}`:"$"+element.price}
+              
+              </div>
+              <div class="addtocart">
+              <a data-id=${element.id} href="">Add to cart</a>
+              </div>
+              </div>
+           `;
+		    })
+
+	      $(".product-list").html(html);
+      })
+})
 	document.querySelector(".product-list").querySelectorAll("a").forEach(e=>{
         e.addEventListener("click",function (event){
           let m_id=e.getAttribute("data-id");
@@ -148,7 +270,20 @@ fetch("../src/json/db.json")
 
   })
   })
-  
+  console.log(min,max)
+  fromInput.setAttribute("min", min);
+  toInput.setAttribute("min", min);
+  fromSlider.setAttribute("min", min);
+  toSlider.setAttribute("min", min);
+  fromInput.setAttribute("max", max);
+  toInput.setAttribute("max", max);
+  fromSlider.setAttribute("max", max);
+  toSlider.setAttribute("max", max);
+  fromSlider.setAttribute("value", min);
+  toSlider.setAttribute("value", max);
+  fromInput.setAttribute("value", min);
+  toInput.setAttribute("value", max);
+  fillSlider(fromSlider, toSlider, '#C6C6C6', '#080808', toSlider);
 	
 })
 
@@ -203,6 +338,7 @@ function controlToSlider(fromSlider, toSlider, toInput) {
 function getParsed(currentFrom, currentTo) {
   const from = parseInt(currentFrom.value, 10);
   const to = parseInt(currentTo.value, 10);
+  console.log(from,to);
   return [from, to];
 }
 
@@ -233,10 +369,9 @@ const fromSlider = document.querySelector('#fromSlider');
 const toSlider = document.querySelector('#toSlider');
 const fromInput = document.querySelector('#fromInput');
 const toInput = document.querySelector('#toInput');
+
 fillSlider(fromSlider, toSlider, '#C6C6C6', '#080808', toSlider);
 setToggleAccessible(toSlider);
 
-fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
-toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
-fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
-toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+fromSlider.oninput = () =>{ controlFromSlider(fromSlider, toSlider, fromInput);}
+toSlider.oninput = () => {controlToSlider(fromSlider, toSlider, toInput);}

@@ -822,4 +822,16 @@ nav a {
 }
 .popUp .product-card .wishlist .fa-regular {
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .product-single-container {
+    flex-direction: column !important;
+  }
+  .products {
+    padding: 0 !important;
+  }
+  .product {
+    flex-basis: 88% !important;
+  }
 }/*# sourceMappingURL=product.css.map */
